@@ -1,0 +1,430 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.myboddy{
+    background-color: #1a1a1a;
+    color: #e0d4cc;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    justify-content: center;
+    width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+
+
+/* Header Styles */
+header {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 50px;
+    width: 70%;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    transform: translateX(-50%) translateY(-5px);
+    box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Navigation Styling */
+nav {
+    
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3e280c;
+    transition: width 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #353b3b;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+/* Contact Button Styling */
+.logo img {
+    height: 50px;
+    width: auto;
+    background-image: url('images/logo_black.png');
+    background-size: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    background-image: url('images/logo_white 3.png;')
+}
+    
+
+.contact-btn1 {
+    position: relative;
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-left: auto;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Rainbow Gradient Hover Effect */
+.contact-btn1:hover {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #6a11cb, #2575fc, #2b93a8);
+    background-size: 400% 400%;
+    background-position: 100% 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* footer */
+/* Footer Base */
+footer {
+    background: url('images/101.png') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    position: relative;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    /* Ensure the footer has enough height to cover all content below */
+    min-height: 300px;
+    padding-bottom: 40px;
+}
+
+/* Footer Container */
+.footer{
+    margin-top: 150px;
+}
+
+.footer-container {
+    /* Black background for the entire footer */
+    color: white;
+    width: 100%;
+    padding: 60px 20px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Heading */
+.footer-heading {
+    position: relative;
+    bottom: 50px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Modern Button */
+.contact-btn {
+    position: relative;
+    top: -20px;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b, #6a11cb, #2575fc, #2b93a8);
+    background-size: 400% 400%;
+    color: white;
+    margin-bottom: 25px;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Rainbow effect animation */
+.contact-btn:hover {
+    background-position: 100% 0;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navigation Links */
+.footer-nav {
+    position:absolute;
+    left: 550px;
+    margin-bottom: 25px;
+    bottom: 50px;
+    margin: 25px 0;
+    font-size: 1rem;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-nav a:hover {
+    color: #c49a5a;
+}
+
+/* Footer Content */
+.footer-content {
+    position: absolute;
+    left: -20px;
+    padding-left: 30px;
+    width: 100vw;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.747);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    gap: 40px;
+    flex-wrap: wrap;
+    position: absolute;
+    
+}
+
+.footer-content .social-media{
+    position: relative;
+    right: 25px;
+    top: -50px;
+}
+
+.footer-content .contact-info{
+    position: relative;
+    top: -50px;
+}
+
+.footer-content .thank-you{
+    position: relative;
+    top: -40px;
+}
+
+.footer-content div {
+    position: relative;
+    top: px;
+    flex: 1;
+    min-width: 220px;
+    height: 200px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.footer-content div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Titles */
+.footer-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    color: #c49a5a;
+}
+
+/* Text */
+.footer-content p {
+    font-size: 0.95rem;
+    color: #d4d4d4;
+    line-height: 1.5;
+    transition: color 0.3s ease-in-out;
+}
+
+.footer-content p:hover {
+    color: white;
+}
+
+/* Copyright */
+.copyright {
+    position: relative;
+    top: 300px;
+    margin-top: 20px;
+    font-size: 0.85rem;
+    opacity: 0.7;
+    text-align: center;
+}
+
+/* header imagge */
+.hero {
+    width: 100%;
+    height: 400px;
+    background: url('images//contactusbanner.png') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4   );
+}
+
+.servicehead{
+    position: relative;
+    font-size: 5.5rem;
+    color: #e9e9e9;
+    align-items: center;
+}
+
+.subhead    {
+    position: relative;
+    font-size: large;
+    left: 90px;
+    color: #ffffff;
+    align-items: center;
+    font-size: medium;
+}
+
+
+
+
+  .contact-form {
+    max-width: 700px;
+    margin: auto;
+    background: rgb(62, 50, 50,0.3);
+    margin-top: 150px;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #e0d4cc;
+    text-align: center;
+  }
+
+  .form-group {
+    margin-bottom: 30px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 6px;
+    color: #c49a5a;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: border-color 0.3s;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #3E3232;
+    outline: none;
+  }
+
+  .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  .buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .submit-btn {
+    background: #3E3232;
+    color: white;
+  }
+
+  .submit-btn:hover {
+    background: #5a4747;
+    transform: scale(1.05);
+  }
+
+  .clear-btn {
+    background: #e0e0e0;
+    color: #333;
+  }
+
+  .clear-btn:hover {
+    background: #ccc;
+    transform: scale(1.05);
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
