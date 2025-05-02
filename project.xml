@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sliders>
+    <!-- Social Media Posts Slider -->
+    <slider id="graphic">
+        <image>images/social media management/project1.png</image>
+        <image>images/social media management/project2.png</image>
+        <image>images/social media management/project3.png</image>
+        <image>images/social media management/chamath.png</image>
+        <image>images/social media management/project4.png</image>
+        <image>images/social media management/project5.png</image>
+    </slider>
+
+    <!-- Product Breakdowns Slider -->
+    <slider id="social">
+        <image>images/watches/1.png</image>
+        <image>images/watches/2.png</image>
+        <image>images/watches/3.png</image>
+        <image>images/watches/4.png</image>
+        <image>images/watches/5.png</image>
+    </slider>
+
+    <!-- Menu Designs Slider -->
+    <slider id="menu">
+        <image>images/menu/1.png</image>
+        <image>images/menu/2.png</image>
+        <image>images/menu/3.png</image>
+        <image>images/menu/4.png</image>
+    </slider>
+
+    <!-- YouTube Thumbnails Slider -->
+    <slider id="thumbnails">
+        <image>images/thumbnails/7.png</image>
+        <image>images/thumbnails/2.png</image>
+        <image>images/thumbnails/4.png</image>
+        <image>images/thumbnails/5.png</image>
+        <image>images/thumbnails/1.png</image>
+    </slider>
+</sliders>
